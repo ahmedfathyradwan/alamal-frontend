@@ -6,11 +6,9 @@ export const site = {
   tagline: "خبرة تتجاوز التوقعات.. وثقة تصنع الفرق",
   description:
     "الأمل للعقارات، وكالة عقارية مصرية متخصصة في بيع وشراء وتأجير العقارات الفاخرة، بخبرة تمتد لأكثر من 17 عامًا في أرقى مواقع مصر.",
-  phone: "+201001234567",
-  phoneDisplay: "0100 123 4567",
-  landline: "+20225178900",
-  landlineDisplay: "02 2517 8900",
-  whatsapp: "201001234567",
+  phone: "+201005456220",
+  phoneDisplay: "0100 545 6220",
+  whatsapp: "201005456220",
   whatsappMessage: "مرحبًا، أرغب في الاستفسار عن خدماتكم العقارية.",
   email: "info@alamal-realestate.com",
   address: "٩٠ شارع التسعين الشمالي، التجمع الخامس، القاهرة الجديدة، مصر",
@@ -22,10 +20,16 @@ export const site = {
     "https://www.google.com/maps?q=30.0074,31.4913&hl=ar&z=14&output=embed",
   mapLink: "https://www.google.com/maps?q=30.0074,31.4913",
   social: [
-    { name: "facebook", label: "فيسبوك", href: "https://www.facebook.com/" },
-    { name: "instagram", label: "إنستغرام", href: "https://www.instagram.com/" },
-    { name: "x", label: "إكس", href: "https://x.com/" },
-    { name: "linkedin", label: "لينكدإن", href: "https://www.linkedin.com/" },
+    {
+      name: "facebook",
+      label: "فيسبوك",
+      href: "https://www.facebook.com/profile.php?id=61589125416239",
+    },
+    {
+      name: "youtube",
+      label: "يوتيوب",
+      href: "https://www.youtube.com/@AlamalroomRealEstateOffice",
+    },
   ],
 };
 

@@ -77,9 +77,9 @@ export default function Header() {
       <div className={styles.topbar}>
         <div className={`${shared.container} ${styles.topbarInner}`}>
           <div className={styles.topbarInfo}>
-            <a href={`tel:${site.landline}`} className={styles.topbarItem}>
+            <a href={`tel:${site.phone}`} className={styles.topbarItem}>
               <PhoneIcon size={14} />
-              <span dir="ltr">{site.landlineDisplay}</span>
+              <span dir="ltr">{site.phoneDisplay}</span>
             </a>
             <a href={`mailto:${site.email}`} className={styles.topbarItem}>
               <MailIcon size={14} />

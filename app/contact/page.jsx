@@ -5,13 +5,11 @@ import Button from "@/components/Button/Button";
 import {
   ClockIcon,
   FacebookIcon,
-  InstagramIcon,
-  LinkedInIcon,
   MailIcon,
   MapPinIcon,
   PhoneIcon,
   WhatsAppIcon,
-  XIcon,
+  YouTubeIcon,
 } from "@/components/Icons/Icons";
 import { site } from "@/data/site";
 import { buildWhatsAppUrl } from "@/lib/links";
@@ -26,19 +24,10 @@ export const metadata = {
 
 const socialIcons = {
   facebook: FacebookIcon,
-  instagram: InstagramIcon,
-  x: XIcon,
-  linkedin: LinkedInIcon,
+  youtube: YouTubeIcon,
 };
 
 const infoRows = [
-  {
-    icon: PhoneIcon,
-    label: "الهاتف الأرضي",
-    value: site.landlineDisplay,
-    href: `tel:${site.landline}`,
-    ltr: true,
-  },
   {
     icon: MailIcon,
     label: "البريد الإلكتروني",

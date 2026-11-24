@@ -24,7 +24,7 @@ function validateField(field, values) {
       if (!value) return "يرجى إدخال رقم الهاتف.";
       const normalized = value.replace(/[\s-]/g, "");
       if (!/^(?:\+20|0)?1[0125]\d{8}$/.test(normalized)) {
-        return "يرجى إدخال رقم هاتف مصري صحيح، مثال: 01001234567.";
+        return "يرجى إدخال رقم هاتف مصري صحيح، مثال: 01123456789.";
       }
       return "";
     }

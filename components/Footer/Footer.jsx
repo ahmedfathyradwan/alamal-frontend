@@ -87,12 +87,6 @@ export default function Footer() {
             <h2 className={styles.heading}>معلومات التواصل</h2>
             <ul className={styles.contactList}>
               <li>
-                <a href={`tel:${site.landline}`} className={styles.contactLink}>
-                  <PhoneIcon size={16} />
-                  <span dir="ltr">{site.landlineDisplay}</span>
-                </a>
-              </li>
-              <li>
                 <a href={`tel:${site.phone}`} className={styles.contactLink}>
                   <PhoneIcon size={16} />
                   <span dir="ltr">{site.phoneDisplay}</span>

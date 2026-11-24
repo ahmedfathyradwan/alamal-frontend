@@ -262,15 +262,6 @@ export default async function PropertyDetailsPage({ params }) {
               </div>
 
               <div className={styles.contactRows}>
-                <a href={`tel:${site.landline}`} className={styles.contactRow}>
-                  <span className={styles.contactIcon}>
-                    <PhoneIcon size={16} />
-                  </span>
-                  <span className={styles.contactInfo}>
-                    <small>الهاتف الأرضي</small>
-                    <span dir="ltr">{site.landlineDisplay}</span>
-                  </span>
-                </a>
                 <a href={`mailto:${site.email}`} className={styles.contactRow}>
                   <span className={styles.contactIcon}>
                     <MailIcon size={16} />
