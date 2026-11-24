@@ -3,10 +3,8 @@
 }
 
 .layout {
-  display: grid;
-  grid-template-columns: 380px minmax(0, 1fr);
-  gap: clamp(1.4rem, 3vw, 2rem);
-  align-items: start;
+  width: min(100%, 600px);
+  margin-inline: auto;
 }
 
 .infoPanel {
@@ -133,35 +131,6 @@ a.row:hover {
   border-color: var(--primaryColor);
 }
 
-.formCard {
-  padding: clamp(1.5rem, 3.5vw, 2.4rem);
-  border: 1px solid var(--borderColor);
-  border-radius: var(--radiusLg);
-  background-color: var(--whiteColor);
-  box-shadow: var(--shadowMd);
-}
-
-.formEyebrow {
-  display: inline-block;
-  margin-bottom: 0.5rem;
-  font-size: 0.74rem;
-  font-weight: 700;
-  color: var(--primaryColor);
-}
-
-.formTitle {
-  margin: 0 0 0.4rem;
-  font-size: clamp(1.35rem, 2.5vw, 1.7rem);
-  color: var(--secondaryColor);
-}
-
-.formText {
-  margin: 0 0 1.4rem;
-  font-size: 0.88rem;
-  line-height: 1.85;
-  color: var(--mutedText);
-}
-
 .mapSection {
   padding-bottom: clamp(3rem, 6vw, 5rem);
 }
@@ -183,12 +152,6 @@ a.row:hover {
   width: 100%;
   height: 100%;
   border: 0;
-}
-
-@media (max-width: 1024px) {
-  .layout {
-    grid-template-columns: 1fr;
-  }
 }
 
 @media (max-width: 640px) {

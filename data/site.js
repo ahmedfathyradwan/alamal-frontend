@@ -1,24 +1,25 @@
 import { categories } from "./properties";
 
+const mapQuery = encodeURIComponent("شارع علم الروم، مرسى مطروح، مصر");
+
 export const site = {
-  name: "الأمل للعقارات",
-  nameEn: "Al Amal Real Estate",
+  name: "علم الروم",
+  nameEn: "Alam El Roum Real Estate",
   tagline: "خبرة تتجاوز التوقعات.. وثقة تصنع الفرق",
   description:
-    "الأمل للعقارات، وكالة عقارية مصرية متخصصة في بيع وشراء وتأجير العقارات الفاخرة، بخبرة تمتد لأكثر من 17 عامًا في أرقى مواقع مصر.",
+    "علم الروم، وكالة عقارية مصرية متخصصة في بيع وشراء وتأجير العقارات الفاخرة، بخبرة تمتد لأكثر من 17 عامًا في أرقى مواقع مصر.",
   phone: "+201005456220",
   phoneDisplay: "0100 545 6220",
   whatsapp: "201005456220",
   whatsappMessage: "مرحبًا، أرغب في الاستفسار عن خدماتكم العقارية.",
-  email: "info@alamal-realestate.com",
-  address: "٩٠ شارع التسعين الشمالي، التجمع الخامس، القاهرة الجديدة، مصر",
-  addressShort: "التجمع الخامس، القاهرة الجديدة",
-  workingHours: "السبت – الخميس: ٩ صباحًا – ٨ مساءً",
-  workingHoursFriday: "الجمعة: ٢ مساءً – ٨ مساءً",
+  email: "abdelghaffar495@gmail.com",
+  address: "مرسى مطروح - شارع علم الروم - بجوار مدرسة الهدى الخاصة",
+  addressShort: "مرسى مطروح - شارع علم الروم",
+  workingHours: "يوميًا: ٧:٣٠ صباحًا – ١١:٣٠ مساءً",
+  workingHoursFriday: "الجمعة: ٢:٠٠ مساءً – ١١:٣٠ مساءً",
   establishedYear: 2008,
-  mapEmbed:
-    "https://www.google.com/maps?q=30.0074,31.4913&hl=ar&z=14&output=embed",
-  mapLink: "https://www.google.com/maps?q=30.0074,31.4913",
+  mapEmbed: `https://www.google.com/maps?q=${mapQuery}&hl=ar&z=16&output=embed`,
+  mapLink: `https://www.google.com/maps?q=${mapQuery}`,
   social: [
     {
       name: "facebook",
@@ -161,7 +162,7 @@ export const testimonials = [
     name: "أحمد سمير",
     role: "مالك فيلا – التجمع الخامس",
     quote:
-      "اشتريت فيلتي الأولى من خلال فريق الأمل، وكانت التجربة أسهل مما تخيلت. اهتمامهم بالتفاصيل والمتابعة بعد البيع كان استثنائيًا.",
+      "اشتريت فيلتي الأولى من خلال فريق علم الروم، وكانت التجربة أسهل مما تخيلت. اهتمامهم بالتفاصيل والمتابعة بعد البيع كان استثنائيًا.",
   },
   {
     name: "منى عبد الرحمن",

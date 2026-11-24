@@ -125,7 +125,7 @@ export default function Footer() {
           <p>
             © {currentYear} {site.name}. جميع الحقوق محفوظة.
           </p>
-          <p className={styles.note}>وكالة عقارية مرخصة – القاهرة الجديدة</p>
+          <p className={styles.note}>وكالة عقارية مرخصة – مرسى مطروح</p>
         </div>
       </div>
     </footer>

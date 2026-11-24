@@ -51,7 +51,7 @@ export default function HomePage() {
               <span className={styles.highlight}> يليق بطموحك</span>
             </h1>
             <p className={styles.heroText}>
-              من قلب القاهرة الجديدة إلى أرقى شواطئ مصر، نقدم لك عقارات فاخرة
+              من قلب مرسى مطروح إلى أرقى مواقع مصر، نقدم لك عقارات فاخرة
               مختارة بعناية واستشارات موثوقة من خبراء يعرفون السوق المصري حق
               المعرفة.
             </p>
@@ -95,7 +95,7 @@ export default function HomePage() {
           <div className={styles.aboutMedia}>
             <Image
               src="/images/about-office.jpg"
-              alt="مكتب الأمل للعقارات في القاهرة الجديدة"
+              alt="مكتب علم الروم للعقارات في مرسى مطروح"
               fill
               sizes="(max-width: 900px) 100vw, 50vw"
               className={styles.aboutImage}
@@ -111,7 +111,7 @@ export default function HomePage() {
               align="start"
               eyebrow="من نحن"
               title="خبرة محلية.. ورؤية تصنع الفرق"
-              description="في الأمل للعقارات، نؤمن أن العقار ليس مجرد صفقة، بل خطوة مهمة في حياتك. لذلك نجمع بين معرفة دقيقة بالسوق المصري وخدمة شخصية تراعي تفاصيل احتياجك."
+              description="في علم الروم، نؤمن أن العقار ليس مجرد صفقة، بل خطوة مهمة في حياتك. لذلك نجمع بين معرفة دقيقة بالسوق المصري وخدمة شخصية تراعي تفاصيل احتياجك."
             />
             <ul className={styles.checkList}>
               {whyChoose.slice(0, 4).map((item) => (

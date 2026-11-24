@@ -153,9 +153,9 @@ a.topbarItem:hover {
 
 .dropdown {
   position: absolute;
-  top: calc(100% + 8px);
-  inset-inline-start: 50%;
-  transform: translate(-50%, 8px);
+  top: 100%;
+  inset-inline-start: 0;
+  transform: translateY(8px);
   width: 460px;
   padding: 1.1rem;
   border: 1px solid var(--borderColor);
@@ -175,7 +175,7 @@ a.topbarItem:hover {
   opacity: 1;
   visibility: visible;
   pointer-events: auto;
-  transform: translate(-50%, 0);
+  transform: translateY(0);
 }
 
 .dropdownColumns {

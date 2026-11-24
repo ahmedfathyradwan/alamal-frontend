@@ -1,6 +1,5 @@
 import PageHero from "@/components/PageHero/PageHero";
 import SectionHeading from "@/components/SectionHeading/SectionHeading";
-import ContactForm from "@/components/ContactForm/ContactForm";
 import Button from "@/components/Button/Button";
 import {
   ClockIcon,
@@ -19,7 +18,7 @@ import styles from "./page.module.css";
 export const metadata = {
   title: "اتصل بنا",
   description:
-    "تواصل مع الأمل للعقارات: هاتف، واتساب، بريد إلكتروني، أو زيارة مكتبنا في التجمع الخامس بالقاهرة الجديدة.",
+    "تواصل مع علم الروم: هاتف، واتساب، بريد إلكتروني، أو زيارة مكتبنا في مرسى مطروح.",
 };
 
 const socialIcons = {
@@ -137,16 +136,6 @@ export default function ContactPage() {
               </div>
             </div>
           </aside>
-
-          <div className={styles.formCard}>
-            <span className={styles.formEyebrow}>نموذج التواصل</span>
-            <h2 className={styles.formTitle}>أرسل لنا رسالة</h2>
-            <p className={styles.formText}>
-              املأ البيانات التالية وسيتواصل معك أحد مستشارينا العقاريين في أقرب
-              وقت.
-            </p>
-            <ContactForm />
-          </div>
         </div>
       </section>
 
@@ -155,7 +144,7 @@ export default function ContactPage() {
           <SectionHeading
             align="start"
             eyebrow="موقع المكتب"
-            title="زورنا في القاهرة الجديدة"
+            title="زورنا في مرسى مطروح"
             description={site.address}
             action={
               <Button
@@ -172,7 +161,7 @@ export default function ContactPage() {
           <div className={styles.mapWrap}>
             <iframe
               src={site.mapEmbed}
-              title="موقع مكتب الأمل للعقارات على الخريطة"
+              title="موقع مكتب علم الروم على الخريطة"
               loading="lazy"
               allowFullScreen
               referrerPolicy="no-referrer-when-downgrade"

@@ -6,7 +6,7 @@ export default function Logo({ variant = "dark", className = "" }) {
     <Link
       href="/"
       className={[styles.logo, styles[variant], className].filter(Boolean).join(" ")}
-      aria-label="الأمل للعقارات - الصفحة الرئيسية"
+      aria-label="علم الروم للعقارات - الصفحة الرئيسية"
     >
       <span className={styles.mark} aria-hidden="true">
         <svg viewBox="0 0 44 44" width="30" height="30" fill="none">
@@ -28,7 +28,7 @@ export default function Logo({ variant = "dark", className = "" }) {
         </svg>
       </span>
       <span className={styles.text}>
-        <span className={styles.name}>الأمل</span>
+        <span className={styles.name}>علم الروم</span>
         <span className={styles.sub}>للعقارات</span>
       </span>
     </Link>
