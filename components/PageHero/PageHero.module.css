@@ -1,0 +1,63 @@
+.hero {
+  position: relative;
+  overflow: hidden;
+  background-color: var(--secondaryColor);
+  color: var(--whiteColor);
+  padding-block: clamp(2.6rem, 6vw, 4.4rem);
+}
+
+.pattern {
+  position: absolute;
+  inset: 0;
+  background-image:
+    radial-gradient(circle at 14% 18%, rgba(171, 135, 75, 0.24), transparent 42%),
+    radial-gradient(circle at 88% 82%, rgba(171, 135, 75, 0.14), transparent 38%),
+    linear-gradient(90deg, rgba(255, 255, 255, 0.035) 1px, transparent 1px);
+  background-size: auto, auto, 74px 74px;
+  pointer-events: none;
+}
+
+.inner {
+  position: relative;
+  z-index: 1;
+}
+
+.inner > nav {
+  margin-bottom: 1.4rem;
+}
+
+.eyebrow {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.6rem;
+  color: var(--primaryLight);
+  font-size: 0.8rem;
+  font-weight: 600;
+  margin-bottom: 0.6rem;
+}
+
+.eyebrow::before {
+  content: "";
+  width: 28px;
+  height: 1px;
+  background-color: var(--primaryColor);
+}
+
+.title {
+  max-width: 900px;
+  font-size: clamp(2rem, 4.6vw, 3rem);
+  font-weight: 800;
+  line-height: 1.25;
+}
+
+.description {
+  max-width: 680px;
+  margin-top: 1rem;
+  color: rgba(255, 255, 255, 0.72);
+  font-size: clamp(0.95rem, 1.4vw, 1.05rem);
+  line-height: 1.85;
+}
+
+.extra {
+  margin-top: 1.6rem;
+}

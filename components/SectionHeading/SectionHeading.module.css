@@ -1,0 +1,89 @@
+.wrap {
+  display: flex;
+  align-items: flex-end;
+  justify-content: space-between;
+  gap: 1.5rem 2rem;
+  flex-wrap: wrap;
+  margin-bottom: clamp(2rem, 4vw, 3rem);
+}
+
+.text {
+  display: flex;
+  flex-direction: column;
+  gap: 0.75rem;
+  max-width: 720px;
+}
+
+.center {
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  max-width: 780px;
+  margin-inline: auto;
+}
+
+.center .text {
+  align-items: center;
+}
+
+.start {
+  text-align: start;
+}
+
+.eyebrow {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.6rem;
+  color: var(--primaryColor);
+  font-size: 0.8rem;
+  font-weight: 700;
+}
+
+.eyebrow::before {
+  content: "";
+  width: 28px;
+  height: 1px;
+  background-color: currentColor;
+}
+
+.center .eyebrow::after {
+  content: "";
+  width: 28px;
+  height: 1px;
+  background-color: currentColor;
+}
+
+.title {
+  font-size: clamp(1.7rem, 3.2vw, 2.5rem);
+  color: var(--secondaryColor);
+  font-weight: 800;
+}
+
+.description {
+  color: var(--mutedText);
+  font-size: 0.98rem;
+  line-height: 1.8;
+}
+
+.action {
+  flex-shrink: 0;
+}
+
+.light .title {
+  color: var(--whiteColor);
+}
+
+.light .description {
+  color: rgba(255, 255, 255, 0.68);
+}
+
+@media (max-width: 640px) {
+  .wrap {
+    align-items: flex-start;
+  }
+
+  .center {
+    align-items: center;
+  }
+}

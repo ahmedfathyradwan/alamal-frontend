@@ -1,0 +1,59 @@
+.logo {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.65rem;
+  flex-shrink: 0;
+}
+
+.mark {
+  display: grid;
+  place-items: center;
+  width: 46px;
+  height: 46px;
+  border: 1px solid rgba(171, 135, 75, 0.45);
+  border-radius: 12px;
+  background-color: var(--secondaryColor);
+}
+
+.text {
+  display: flex;
+  flex-direction: column;
+  line-height: 1.1;
+}
+
+.name {
+  font-family: var(--fontDisplay);
+  font-size: 1.4rem;
+  font-weight: 800;
+  color: var(--secondaryColor);
+}
+
+.sub {
+  margin-top: 0.15rem;
+  color: var(--primaryColor);
+  font-size: 0.72rem;
+  font-weight: 600;
+}
+
+.light .name {
+  color: var(--whiteColor);
+}
+
+.light .sub {
+  color: var(--primaryLight);
+}
+
+.light .mark {
+  background-color: rgba(255, 255, 255, 0.04);
+}
+
+@media (max-width: 480px) {
+  .mark {
+    width: 42px;
+    height: 42px;
+  }
+
+  .name {
+    font-size: 1.25rem;
+  }
+}

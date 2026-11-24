@@ -1,0 +1,50 @@
+.nav {
+  font-size: 0.84rem;
+}
+
+.list {
+  display: flex;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 0.4rem;
+}
+
+.item {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.4rem;
+  color: var(--mutedText);
+}
+
+.separator {
+  color: rgba(17, 23, 28, 0.3);
+}
+
+.link {
+  transition: color 0.2s ease;
+}
+
+.link:hover {
+  color: var(--primaryColor);
+}
+
+.current {
+  color: var(--secondaryColor);
+  font-weight: 600;
+}
+
+.light .item {
+  color: rgba(255, 255, 255, 0.62);
+}
+
+.light .separator {
+  color: rgba(255, 255, 255, 0.3);
+}
+
+.light .current {
+  color: var(--primaryLight);
+}
+
+.light .link:hover {
+  color: var(--primaryLight);
+}

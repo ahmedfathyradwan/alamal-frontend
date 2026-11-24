@@ -1,0 +1,494 @@
+.topbar {
+  background-color: var(--secondaryColor);
+  color: rgba(255, 255, 255, 0.68);
+  font-size: 0.78rem;
+}
+
+.topbarInner {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 1rem;
+  min-height: 40px;
+  padding-block: 0.35rem;
+}
+
+.topbarInfo {
+  display: flex;
+  align-items: center;
+  gap: 1.4rem;
+  flex-wrap: wrap;
+}
+
+.topbarItem {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.45rem;
+  transition: color 0.2s ease;
+}
+
+.topbarItem svg {
+  color: var(--primaryColor);
+}
+
+a.topbarItem:hover {
+  color: var(--whiteColor);
+}
+
+.topbarSocial {
+  display: flex;
+  align-items: center;
+  gap: 0.25rem;
+}
+
+.socialLink {
+  display: grid;
+  place-items: center;
+  width: 28px;
+  height: 28px;
+  border-radius: 50%;
+  color: rgba(255, 255, 255, 0.6);
+  transition:
+    color 0.2s ease,
+    background-color 0.2s ease;
+}
+
+.socialLink:hover {
+  background-color: rgba(255, 255, 255, 0.07);
+  color: var(--primaryLight);
+}
+
+.header {
+  position: sticky;
+  top: 0;
+  z-index: 50;
+  background-color: rgba(255, 255, 255, 0.97);
+  border-bottom: 1px solid var(--lightGray);
+  transition: box-shadow 0.25s ease;
+}
+
+.header.scrolled {
+  box-shadow: 0 10px 30px rgba(17, 23, 28, 0.08);
+}
+
+.inner {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 1.2rem;
+  min-height: 84px;
+  padding-block: 0.6rem;
+}
+
+.nav {
+  display: flex;
+  justify-content: center;
+  flex: 1;
+}
+
+.navList {
+  display: flex;
+  align-items: center;
+  gap: 0.15rem;
+}
+
+.navItem {
+  position: relative;
+}
+
+.navLink {
+  position: relative;
+  display: inline-flex;
+  align-items: center;
+  gap: 0.3rem;
+  padding: 0.65rem 0.85rem;
+  color: var(--secondaryColor);
+  font-family: var(--fontDisplay);
+  font-size: 0.94rem;
+  font-weight: 600;
+  border-radius: 8px;
+  transition:
+    color 0.2s ease,
+    background-color 0.2s ease;
+}
+
+.navLink::after {
+  content: "";
+  position: absolute;
+  inset-inline: 0.85rem;
+  bottom: 0.35rem;
+  height: 2px;
+  background-color: var(--primaryColor);
+  transform: scaleX(0);
+  transform-origin: center;
+  transition: transform 0.25s ease;
+}
+
+.navLink:hover {
+  color: var(--primaryDark);
+  background-color: rgba(171, 135, 75, 0.06);
+}
+
+.navLink:hover::after,
+.navLink.active::after {
+  transform: scaleX(1);
+}
+
+.navLink.active {
+  color: var(--primaryDark);
+}
+
+.navTrigger {
+  border: 0;
+}
+
+.chevron {
+  color: var(--mutedText);
+  transition: transform 0.25s ease;
+}
+
+.chevronOpen {
+  transform: rotate(180deg);
+}
+
+.dropdown {
+  position: absolute;
+  top: calc(100% + 8px);
+  inset-inline-start: 50%;
+  transform: translate(-50%, 8px);
+  width: 460px;
+  padding: 1.1rem;
+  border: 1px solid var(--borderColor);
+  border-radius: var(--radiusMd);
+  background-color: var(--whiteColor);
+  box-shadow: var(--shadowMd);
+  opacity: 0;
+  visibility: hidden;
+  pointer-events: none;
+  transition:
+    opacity 0.2s ease,
+    transform 0.2s ease,
+    visibility 0.2s ease;
+}
+
+.dropdownOpen {
+  opacity: 1;
+  visibility: visible;
+  pointer-events: auto;
+  transform: translate(-50%, 0);
+}
+
+.dropdownColumns {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 1rem;
+}
+
+.dropdownColumn {
+  display: flex;
+  flex-direction: column;
+  gap: 0.1rem;
+}
+
+.dropdownLabel {
+  padding: 0.3rem 0.6rem 0.45rem;
+  color: var(--primaryColor);
+  font-size: 0.74rem;
+  font-weight: 700;
+}
+
+.dropdownLink {
+  padding: 0.5rem 0.6rem;
+  border-radius: 6px;
+  color: var(--secondaryColor);
+  font-size: 0.88rem;
+  font-weight: 500;
+  transition:
+    background-color 0.2s ease,
+    color 0.2s ease;
+}
+
+.dropdownLink:hover {
+  background-color: var(--surfaceAlt);
+  color: var(--primaryDark);
+}
+
+.dropdownCta {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 1rem;
+  margin-top: 0.9rem;
+  padding: 0.8rem 1rem;
+  border-radius: 8px;
+  background-color: var(--secondaryColor);
+  color: var(--whiteColor);
+  font-size: 0.82rem;
+  font-weight: 600;
+  transition: background-color 0.2s ease;
+}
+
+.dropdownCta:hover {
+  background-color: var(--charcoalSoft);
+}
+
+.dropdownCta svg {
+  color: var(--primaryColor);
+}
+
+.actions {
+  display: flex;
+  align-items: center;
+  gap: 0.6rem;
+  flex-shrink: 0;
+}
+
+.desktopCta {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+}
+
+.callIcon {
+  display: none;
+  place-items: center;
+  width: 42px;
+  height: 42px;
+  border: 1px solid var(--borderColor);
+  border-radius: 50%;
+  color: var(--secondaryColor);
+  transition:
+    border-color 0.2s ease,
+    color 0.2s ease;
+}
+
+.callIcon:hover {
+  border-color: var(--primaryColor);
+  color: var(--primaryColor);
+}
+
+.mobileToggle {
+  display: none;
+  place-items: center;
+  width: 44px;
+  height: 44px;
+  border: 1px solid var(--borderColor);
+  border-radius: 10px;
+  color: var(--secondaryColor);
+}
+
+.mobileToggle:hover {
+  border-color: var(--primaryColor);
+  color: var(--primaryColor);
+}
+
+.mobileLayer {
+  position: fixed;
+  inset: 0;
+  z-index: 100;
+}
+
+.overlay {
+  position: absolute;
+  inset: 0;
+  background-color: rgba(17, 23, 28, 0.55);
+  backdrop-filter: blur(2px);
+}
+
+.mobilePanel {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  inset-inline-end: 0;
+  width: min(400px, 90vw);
+  display: flex;
+  flex-direction: column;
+  gap: 1.25rem;
+  padding: 1.4rem 1.4rem 2rem;
+  background-color: var(--whiteColor);
+  overflow-y: auto;
+  animation: slideIn 0.26s ease;
+}
+
+@keyframes slideIn {
+  from {
+    transform: translateX(100%);
+  }
+  to {
+    transform: translateX(0);
+  }
+}
+
+.mobileHead {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 1rem;
+  padding-bottom: 1rem;
+  border-bottom: 1px solid var(--lightGray);
+}
+
+.mobileClose {
+  display: grid;
+  place-items: center;
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  background-color: var(--surfaceAlt);
+  color: var(--secondaryColor);
+}
+
+.mobileClose:hover {
+  background-color: var(--primaryLight);
+}
+
+.mobileNav ul {
+  display: flex;
+  flex-direction: column;
+  gap: 0.15rem;
+}
+
+.mobileLink {
+  display: block;
+  padding: 0.65rem 0.4rem;
+  border-bottom: 1px solid var(--lightGray);
+  color: var(--secondaryColor);
+  font-family: var(--fontDisplay);
+  font-size: 1.02rem;
+  font-weight: 600;
+}
+
+.mobileLink:hover,
+.mobileActive {
+  color: var(--primaryColor);
+}
+
+.mobileSub {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 0.1rem 0.5rem;
+  padding: 0.4rem 0.4rem 0.5rem;
+}
+
+.mobileSubLink {
+  display: block;
+  padding: 0.4rem 0.2rem;
+  color: var(--mutedText);
+  font-size: 0.85rem;
+  transition: color 0.2s ease;
+}
+
+.mobileSubLink:hover {
+  color: var(--primaryColor);
+}
+
+.mobileActions {
+  display: flex;
+  flex-direction: column;
+  gap: 0.6rem;
+}
+
+.mobileContact {
+  display: flex;
+  flex-direction: column;
+  gap: 0.55rem;
+  padding-top: 1rem;
+  border-top: 1px solid var(--lightGray);
+  color: var(--mutedText);
+  font-size: 0.82rem;
+}
+
+.mobileContact a,
+.mobileContact p {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+  word-break: break-word;
+}
+
+.mobileContact svg {
+  color: var(--primaryColor);
+}
+
+.mobileSocial {
+  display: flex;
+  gap: 0.3rem;
+}
+
+.mobileSocial .socialLink {
+  width: 34px;
+  height: 34px;
+  background-color: var(--surfaceAlt);
+  color: var(--secondaryColor);
+}
+
+.mobileSocial .socialLink:hover {
+  background-color: var(--primaryColor);
+  color: var(--whiteColor);
+}
+
+@media (min-width: 1024px) {
+  .mobileToggle {
+    display: none;
+  }
+}
+
+@media (max-width: 1199px) {
+  .desktopCta {
+    display: none;
+  }
+
+  .callIcon {
+    display: grid;
+  }
+
+  .navLink {
+    padding-inline: 0.65rem;
+    font-size: 0.9rem;
+  }
+
+  .navLink::after {
+    inset-inline: 0.65rem;
+  }
+}
+
+@media (max-width: 1023px) {
+  .nav {
+    display: none;
+  }
+
+  .mobileToggle {
+    display: grid;
+  }
+
+  .inner {
+    min-height: 72px;
+  }
+}
+
+@media (max-width: 900px) {
+  .topbarHours {
+    display: none;
+  }
+}
+
+@media (max-width: 700px) {
+  .topbarInfo a:nth-child(2) {
+    display: none;
+  }
+}
+
+@media (max-width: 420px) {
+  .callIcon {
+    display: none;
+  }
+
+  .topbarSocial {
+    gap: 0;
+  }
+
+  .socialLink {
+    width: 24px;
+    height: 24px;
+  }
+}

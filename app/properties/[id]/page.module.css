@@ -1,0 +1,488 @@
+.topBar {
+  padding-block: 1.1rem;
+  border-bottom: 1px solid var(--borderColor);
+}
+
+.topBarInner {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: space-between;
+  gap: 0.75rem 1.2rem;
+}
+
+.backLink {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.35rem;
+  font-size: 0.82rem;
+  font-weight: 600;
+  color: var(--secondaryColor);
+  transition: color 0.2s ease;
+}
+
+.backLink:hover {
+  color: var(--primaryColor);
+}
+
+.gallerySection {
+  padding-top: clamp(1.4rem, 3vw, 2.2rem);
+}
+
+.headSection {
+  padding-block: clamp(1.4rem, 3vw, 2rem);
+}
+
+.head {
+  display: grid;
+  grid-template-columns: minmax(0, 1fr) auto;
+  gap: 1.5rem;
+  align-items: center;
+}
+
+.headMain {
+  min-width: 0;
+}
+
+.badges {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.45rem;
+  margin-bottom: 0.75rem;
+}
+
+.badgePrimary {
+  padding: 0.32rem 0.8rem;
+  border-radius: 999px;
+  background-color: var(--primaryColor);
+  color: var(--whiteColor);
+  font-size: 0.74rem;
+  font-weight: 700;
+}
+
+.badge {
+  padding: 0.32rem 0.8rem;
+  border-radius: 999px;
+  border: 1px solid var(--borderColor);
+  background-color: var(--whiteColor);
+  color: var(--textSoft);
+  font-size: 0.74rem;
+  font-weight: 600;
+}
+
+.badgeFeatured {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.3rem;
+  padding: 0.32rem 0.8rem;
+  border-radius: 999px;
+  background-color: rgba(171, 135, 75, 0.14);
+  color: var(--primaryDark);
+  font-size: 0.74rem;
+  font-weight: 700;
+}
+
+.title {
+  margin: 0 0 0.6rem;
+  font-size: clamp(1.45rem, 3vw, 2.15rem);
+  line-height: 1.45;
+  color: var(--secondaryColor);
+}
+
+.location {
+  display: flex;
+  align-items: center;
+  gap: 0.4rem;
+  margin: 0 0 1rem;
+  font-size: 0.9rem;
+  color: var(--mutedText);
+}
+
+.location svg {
+  flex-shrink: 0;
+  color: var(--primaryColor);
+}
+
+.quickSpecs {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.55rem;
+}
+
+.quickSpecs span {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.4rem;
+  padding: 0.45rem 0.8rem;
+  border: 1px solid var(--borderColor);
+  border-radius: 10px;
+  background-color: var(--whiteColor);
+  font-size: 0.8rem;
+  font-weight: 500;
+  color: var(--textSoft);
+}
+
+.quickSpecs svg {
+  color: var(--primaryColor);
+}
+
+.priceCard {
+  min-width: 230px;
+  padding: 1.25rem 1.6rem;
+  border-radius: var(--radiusMd);
+  border-top: 3px solid var(--primaryColor);
+  background-color: var(--secondaryColor);
+  color: var(--whiteColor);
+  text-align: center;
+  box-shadow: var(--shadowMd);
+}
+
+.priceLabel {
+  display: block;
+  margin-bottom: 0.35rem;
+  font-size: 0.75rem;
+  color: rgba(255, 255, 255, 0.6);
+}
+
+.price {
+  display: flex;
+  align-items: baseline;
+  justify-content: center;
+  gap: 0.4rem;
+  margin: 0;
+}
+
+.price strong {
+  font-family: var(--fontDisplay);
+  font-size: clamp(1.6rem, 3vw, 2.05rem);
+  font-weight: 800;
+  line-height: 1.1;
+  color: var(--whiteColor);
+}
+
+.price span {
+  font-size: 0.9rem;
+  color: var(--primaryLight);
+}
+
+.priceSuffix {
+  display: inline-block;
+  margin-top: 0.25rem;
+  font-size: 0.78rem;
+  color: var(--primaryLight);
+}
+
+.bodySection {
+  padding-block: clamp(0.6rem, 2vw, 1rem) clamp(3rem, 6vw, 5rem);
+}
+
+.layout {
+  display: grid;
+  grid-template-columns: minmax(0, 1fr) 360px;
+  gap: clamp(1.2rem, 3vw, 2rem);
+  align-items: start;
+}
+
+.main {
+  display: flex;
+  flex-direction: column;
+  gap: 1.2rem;
+  min-width: 0;
+}
+
+.panel {
+  padding: clamp(1.2rem, 3vw, 1.8rem);
+  border: 1px solid var(--borderColor);
+  border-radius: var(--radiusMd);
+  background-color: var(--whiteColor);
+  box-shadow: var(--shadowSm);
+}
+
+.panelTitle {
+  position: relative;
+  margin: 0 0 1rem;
+  padding-inline-start: 0.85rem;
+  font-size: 1.15rem;
+  color: var(--secondaryColor);
+}
+
+.panelTitle::before {
+  content: "";
+  position: absolute;
+  inset-inline-start: 0;
+  top: 0.2em;
+  bottom: 0.2em;
+  width: 3px;
+  border-radius: 2px;
+  background-color: var(--primaryColor);
+}
+
+.description {
+  margin: 0;
+  font-size: 0.93rem;
+  line-height: 1.95;
+  color: var(--textSoft);
+}
+
+.features {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 0.7rem 1rem;
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+.features li {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+  font-size: 0.88rem;
+  color: var(--textSoft);
+}
+
+.check {
+  display: grid;
+  place-items: center;
+  flex-shrink: 0;
+  width: 22px;
+  height: 22px;
+  border-radius: 50%;
+  background-color: rgba(171, 135, 75, 0.12);
+  color: var(--primaryColor);
+}
+
+.specsList {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 0.9rem 1.6rem;
+  margin: 0;
+}
+
+.specRow {
+  display: flex;
+  flex-direction: column;
+  gap: 0.15rem;
+  padding-bottom: 0.65rem;
+  border-bottom: 1px dashed var(--lightGray);
+}
+
+.specWide {
+  grid-column: 1 / -1;
+}
+
+.specRow dt {
+  font-size: 0.74rem;
+  color: var(--mutedText);
+}
+
+.specRow dd {
+  margin: 0;
+  font-size: 0.88rem;
+  font-weight: 600;
+  color: var(--secondaryColor);
+}
+
+.mapWrap {
+  position: relative;
+  aspect-ratio: 16 / 9;
+  overflow: hidden;
+  border-radius: var(--radiusSm);
+  background-color: var(--lightGray);
+}
+
+.mapWrap iframe {
+  position: absolute;
+  inset: 0;
+  width: 100%;
+  height: 100%;
+  border: 0;
+}
+
+.mapLink {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.4rem;
+  margin-top: 0.9rem;
+  font-size: 0.82rem;
+  font-weight: 700;
+  color: var(--primaryColor);
+}
+
+.aside {
+  min-width: 0;
+}
+
+.contactCard {
+  position: sticky;
+  top: 104px;
+  display: flex;
+  flex-direction: column;
+  gap: 0.65rem;
+  padding: 1.5rem;
+  border: 1px solid var(--borderColor);
+  border-radius: var(--radiusMd);
+  background-color: var(--whiteColor);
+  box-shadow: var(--shadowMd);
+}
+
+.contactEyebrow {
+  font-size: 0.72rem;
+  font-weight: 700;
+  color: var(--primaryColor);
+}
+
+.contactTitle {
+  margin: 0;
+  font-size: 1.25rem;
+  color: var(--secondaryColor);
+}
+
+.contactText {
+  margin: 0 0 0.35rem;
+  font-size: 0.85rem;
+  line-height: 1.8;
+  color: var(--mutedText);
+}
+
+.contactActions {
+  display: grid;
+  gap: 0.55rem;
+  margin-bottom: 0.3rem;
+}
+
+.contactRows {
+  display: grid;
+  gap: 0.8rem;
+  padding-top: 1rem;
+  border-top: 1px solid var(--lightGray);
+}
+
+.contactRow {
+  display: flex;
+  align-items: flex-start;
+  gap: 0.65rem;
+  font-size: 0.82rem;
+  color: var(--textSoft);
+  transition: color 0.2s ease;
+}
+
+a.contactRow:hover {
+  color: var(--primaryColor);
+}
+
+.contactIcon {
+  display: grid;
+  place-items: center;
+  flex-shrink: 0;
+  width: 34px;
+  height: 34px;
+  border-radius: 10px;
+  background-color: var(--surfaceAlt);
+  color: var(--primaryColor);
+}
+
+.contactInfo {
+  display: flex;
+  flex-direction: column;
+  gap: 0.1rem;
+  min-width: 0;
+  padding-top: 0.15rem;
+  word-break: break-word;
+}
+
+.contactInfo small {
+  font-size: 0.68rem;
+  color: var(--mutedText);
+}
+
+.reference {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 1rem;
+  margin-top: 0.35rem;
+  padding-top: 1rem;
+  border-top: 1px solid var(--lightGray);
+  font-size: 0.78rem;
+  color: var(--mutedText);
+}
+
+.reference strong {
+  font-family: var(--fontDisplay);
+  color: var(--secondaryColor);
+}
+
+.similarSection {
+  background-color: var(--whiteColor);
+}
+
+.similarGrid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: clamp(1rem, 2.2vw, 1.6rem);
+}
+
+@media (max-width: 1024px) {
+  .layout {
+    grid-template-columns: 1fr;
+  }
+
+  .aside {
+    order: -1;
+  }
+
+  .contactCard {
+    position: static;
+  }
+
+  .similarGrid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+@media (max-width: 900px) {
+  .head {
+    grid-template-columns: 1fr;
+    align-items: start;
+  }
+
+  .priceCard {
+    min-width: 0;
+    width: 100%;
+    text-align: start;
+    padding: 1.1rem 1.3rem;
+  }
+
+  .price {
+    justify-content: flex-start;
+  }
+}
+
+@media (max-width: 640px) {
+  .topBarInner {
+    align-items: flex-start;
+    flex-direction: column;
+  }
+
+  .features,
+  .specsList {
+    grid-template-columns: 1fr;
+  }
+
+  .specWide {
+    grid-column: auto;
+  }
+
+  .similarGrid {
+    grid-template-columns: 1fr;
+  }
+
+  .contactCard {
+    padding: 1.25rem;
+  }
+
+  .mapWrap {
+    aspect-ratio: 4 / 3;
+  }
+}

@@ -1,0 +1,159 @@
+.footer {
+  position: relative;
+  margin-top: auto;
+  overflow: hidden;
+  padding-top: clamp(3rem, 6vw, 4.5rem);
+  background-color: var(--secondaryColor);
+  color: rgba(255, 255, 255, 0.66);
+  border-top: 1px solid rgba(171, 135, 75, 0.35);
+}
+
+.footer::before {
+  content: "";
+  position: absolute;
+  inset-inline-start: 8%;
+  top: 0;
+  width: 380px;
+  height: 220px;
+  background-image: radial-gradient(
+    circle at 50% 0%,
+    rgba(171, 135, 75, 0.14),
+    transparent 70%
+  );
+  pointer-events: none;
+}
+
+.grid {
+  position: relative;
+  display: grid;
+  grid-template-columns: 1.5fr 0.8fr 0.9fr 1.3fr;
+  gap: 2.5rem;
+  padding-bottom: clamp(2.5rem, 5vw, 4rem);
+}
+
+.brand {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 1rem;
+}
+
+.brandText {
+  max-width: 330px;
+  font-size: 0.87rem;
+  line-height: 1.9;
+}
+
+.socials {
+  display: flex;
+  gap: 0.4rem;
+  margin-top: 0.2rem;
+}
+
+.socialLink {
+  display: grid;
+  place-items: center;
+  width: 36px;
+  height: 36px;
+  border: 1px solid rgba(255, 255, 255, 0.16);
+  border-radius: 50%;
+  color: rgba(255, 255, 255, 0.75);
+  transition:
+    background-color 0.2s ease,
+    border-color 0.2s ease,
+    color 0.2s ease;
+}
+
+.socialLink:hover {
+  border-color: var(--primaryColor);
+  background-color: var(--primaryColor);
+  color: var(--whiteColor);
+}
+
+.heading {
+  margin-bottom: 1.1rem;
+  color: var(--whiteColor);
+  font-size: 1.02rem;
+  font-weight: 700;
+}
+
+.links {
+  display: flex;
+  flex-direction: column;
+  gap: 0.55rem;
+}
+
+.link {
+  color: rgba(255, 255, 255, 0.66);
+  font-size: 0.87rem;
+  transition: color 0.2s ease;
+}
+
+.link:hover {
+  color: var(--primaryLight);
+}
+
+.contactList {
+  display: flex;
+  flex-direction: column;
+  gap: 0.7rem;
+  font-size: 0.85rem;
+}
+
+.contactLink,
+.contactText {
+  display: flex;
+  align-items: flex-start;
+  gap: 0.55rem;
+  line-height: 1.7;
+  transition: color 0.2s ease;
+}
+
+.contactLink:hover {
+  color: var(--primaryLight);
+}
+
+.contactLink svg,
+.contactText svg {
+  margin-top: 0.22rem;
+  color: var(--primaryColor);
+}
+
+.bottom {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 1rem;
+  flex-wrap: wrap;
+  padding-block: 1.3rem;
+  border-top: 1px solid rgba(255, 255, 255, 0.1);
+  font-size: 0.78rem;
+}
+
+.note {
+  color: rgba(255, 255, 255, 0.42);
+}
+
+@media (max-width: 1024px) {
+  .grid {
+    grid-template-columns: 1.3fr 1fr;
+    gap: 2.2rem;
+  }
+}
+
+@media (max-width: 640px) {
+  .grid {
+    grid-template-columns: 1fr;
+    gap: 2rem;
+  }
+
+  .brandText {
+    max-width: 100%;
+  }
+
+  .bottom {
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 0.5rem;
+  }
+}

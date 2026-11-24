@@ -1,0 +1,128 @@
+.button {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  gap: 0.5rem;
+  border: 1px solid transparent;
+  border-radius: 999px;
+  font-family: var(--fontDisplay);
+  font-weight: 700;
+  line-height: 1.2;
+  text-align: center;
+  white-space: nowrap;
+  transition:
+    background-color 0.25s ease,
+    border-color 0.25s ease,
+    color 0.25s ease,
+    transform 0.2s ease,
+    box-shadow 0.25s ease;
+}
+
+.sm {
+  padding: 0.68rem 1.15rem;
+  font-size: 0.85rem;
+}
+
+.md {
+  padding: 0.9rem 1.6rem;
+  font-size: 0.95rem;
+}
+
+.lg {
+  padding: 1.05rem 2rem;
+  font-size: 1.02rem;
+}
+
+.primary {
+  background-color: var(--primaryColor);
+  color: var(--whiteColor);
+  box-shadow: 0 10px 26px rgba(171, 135, 75, 0.28);
+}
+
+.primary:hover {
+  background-color: var(--primaryDark);
+  box-shadow: 0 14px 30px rgba(171, 135, 75, 0.34);
+  transform: translateY(-2px);
+}
+
+.secondary {
+  background-color: var(--secondaryColor);
+  color: var(--whiteColor);
+}
+
+.secondary:hover {
+  background-color: var(--charcoalSoft);
+  transform: translateY(-2px);
+}
+
+.outline {
+  border-color: rgba(17, 23, 28, 0.22);
+  background-color: transparent;
+  color: var(--secondaryColor);
+}
+
+.outline:hover {
+  border-color: var(--primaryColor);
+  background-color: rgba(171, 135, 75, 0.07);
+  color: var(--primaryDark);
+  transform: translateY(-2px);
+}
+
+.light {
+  background-color: var(--whiteColor);
+  color: var(--secondaryColor);
+}
+
+.light:hover {
+  background-color: var(--primaryLight);
+  transform: translateY(-2px);
+}
+
+.outlineLight {
+  border-color: rgba(255, 255, 255, 0.42);
+  background-color: rgba(255, 255, 255, 0.04);
+  color: var(--whiteColor);
+}
+
+.outlineLight:hover {
+  border-color: var(--primaryColor);
+  background-color: rgba(171, 135, 75, 0.18);
+  transform: translateY(-2px);
+}
+
+.whatsapp {
+  background-color: #1a9e5c;
+  color: var(--whiteColor);
+}
+
+.whatsapp:hover {
+  background-color: #14844b;
+  transform: translateY(-2px);
+}
+
+.ghost {
+  padding-inline: 0;
+  color: var(--primaryColor);
+}
+
+.ghost:hover {
+  color: var(--primaryDark);
+}
+
+.fullWidth {
+  width: 100%;
+}
+
+@media (max-width: 480px) {
+  .lg {
+    padding: 0.95rem 1.5rem;
+    font-size: 0.95rem;
+  }
+}
+
+.button:disabled {
+  opacity: 0.65;
+  cursor: not-allowed;
+  box-shadow: none;
+  transform: none;
+}

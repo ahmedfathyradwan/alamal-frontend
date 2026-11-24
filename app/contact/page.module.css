@@ -1,0 +1,199 @@
+.contactArea {
+  padding-block: clamp(2.4rem, 5vw, 3.4rem) clamp(3rem, 6vw, 5rem);
+}
+
+.layout {
+  display: grid;
+  grid-template-columns: 380px minmax(0, 1fr);
+  gap: clamp(1.4rem, 3vw, 2rem);
+  align-items: start;
+}
+
+.infoPanel {
+  display: flex;
+  flex-direction: column;
+  gap: 0.6rem;
+  padding: clamp(1.5rem, 3vw, 2rem);
+  border-radius: var(--radiusLg);
+  background-color: var(--secondaryColor);
+  color: var(--whiteColor);
+  box-shadow: var(--shadowMd);
+}
+
+.eyebrow {
+  font-size: 0.74rem;
+  font-weight: 700;
+  color: var(--primaryLight);
+}
+
+.infoTitle {
+  margin: 0;
+  font-size: 1.35rem;
+  color: var(--whiteColor);
+}
+
+.infoText {
+  margin: 0 0 0.6rem;
+  font-size: 0.86rem;
+  line-height: 1.85;
+  color: rgba(255, 255, 255, 0.7);
+}
+
+.actions {
+  display: grid;
+  gap: 0.55rem;
+  margin-bottom: 0.7rem;
+}
+
+.rows {
+  display: grid;
+}
+
+.row {
+  display: flex;
+  align-items: flex-start;
+  gap: 0.7rem;
+  padding-block: 0.85rem;
+  border-top: 1px solid rgba(255, 255, 255, 0.1);
+  font-size: 0.84rem;
+  color: rgba(255, 255, 255, 0.82);
+  transition: color 0.2s ease;
+}
+
+a.row:hover {
+  color: var(--primaryLight);
+}
+
+.rowIcon {
+  display: grid;
+  place-items: center;
+  flex-shrink: 0;
+  width: 36px;
+  height: 36px;
+  border-radius: 10px;
+  background-color: rgba(171, 135, 75, 0.18);
+  color: var(--primaryLight);
+}
+
+.rowText {
+  display: flex;
+  flex-direction: column;
+  gap: 0.12rem;
+  min-width: 0;
+  padding-top: 0.15rem;
+  word-break: break-word;
+}
+
+.rowText small {
+  font-size: 0.68rem;
+  color: rgba(255, 255, 255, 0.5);
+}
+
+.rowNote {
+  font-size: 0.72rem;
+  color: rgba(255, 255, 255, 0.58);
+}
+
+.socials {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: space-between;
+  gap: 0.8rem;
+  margin-top: 0.4rem;
+  padding-top: 1rem;
+  border-top: 1px solid rgba(255, 255, 255, 0.1);
+}
+
+.socialsLabel {
+  font-size: 0.74rem;
+  color: rgba(255, 255, 255, 0.58);
+}
+
+.socialLinks {
+  display: flex;
+  gap: 0.45rem;
+}
+
+.socialLink {
+  display: grid;
+  place-items: center;
+  width: 36px;
+  height: 36px;
+  border: 1px solid rgba(255, 255, 255, 0.14);
+  border-radius: 10px;
+  color: var(--whiteColor);
+  transition:
+    background-color 0.2s ease,
+    border-color 0.2s ease;
+}
+
+.socialLink:hover {
+  background-color: var(--primaryColor);
+  border-color: var(--primaryColor);
+}
+
+.formCard {
+  padding: clamp(1.5rem, 3.5vw, 2.4rem);
+  border: 1px solid var(--borderColor);
+  border-radius: var(--radiusLg);
+  background-color: var(--whiteColor);
+  box-shadow: var(--shadowMd);
+}
+
+.formEyebrow {
+  display: inline-block;
+  margin-bottom: 0.5rem;
+  font-size: 0.74rem;
+  font-weight: 700;
+  color: var(--primaryColor);
+}
+
+.formTitle {
+  margin: 0 0 0.4rem;
+  font-size: clamp(1.35rem, 2.5vw, 1.7rem);
+  color: var(--secondaryColor);
+}
+
+.formText {
+  margin: 0 0 1.4rem;
+  font-size: 0.88rem;
+  line-height: 1.85;
+  color: var(--mutedText);
+}
+
+.mapSection {
+  padding-bottom: clamp(3rem, 6vw, 5rem);
+}
+
+.mapWrap {
+  position: relative;
+  width: 100%;
+  min-height: 320px;
+  aspect-ratio: 21 / 8;
+  overflow: hidden;
+  border: 1px solid var(--borderColor);
+  border-radius: var(--radiusLg);
+  background-color: var(--lightGray);
+}
+
+.mapWrap iframe {
+  position: absolute;
+  inset: 0;
+  width: 100%;
+  height: 100%;
+  border: 0;
+}
+
+@media (max-width: 1024px) {
+  .layout {
+    grid-template-columns: 1fr;
+  }
+}
+
+@media (max-width: 640px) {
+  .mapWrap {
+    aspect-ratio: 4 / 3;
+    min-height: 260px;
+  }
+}

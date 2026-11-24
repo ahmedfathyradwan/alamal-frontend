@@ -1,0 +1,60 @@
+.field {
+  display: flex;
+  flex-direction: column;
+  gap: 0.35rem;
+}
+
+.label {
+  color: var(--textSoft);
+  font-size: 0.82rem;
+  font-weight: 600;
+}
+
+.required {
+  margin-inline-start: 0.2rem;
+  color: var(--primaryColor);
+}
+
+.control {
+  width: 100%;
+  min-height: 48px;
+  padding: 0.7rem 0.9rem;
+  border: 1px solid var(--borderColor);
+  border-radius: 8px;
+  background-color: var(--whiteColor);
+  color: var(--secondaryColor);
+  font-size: 0.9rem;
+  line-height: 1.6;
+  transition:
+    border-color 0.2s ease,
+    box-shadow 0.2s ease;
+}
+
+textarea.control {
+  min-height: 140px;
+  resize: vertical;
+}
+
+.control::placeholder {
+  color: #a6a6a6;
+}
+
+.control:focus {
+  outline: none;
+  border-color: var(--primaryColor);
+  box-shadow: 0 0 0 3px rgba(171, 135, 75, 0.16);
+}
+
+.hasError .control {
+  border-color: #b42318;
+}
+
+.hasError .control:focus {
+  box-shadow: 0 0 0 3px rgba(180, 35, 24, 0.14);
+}
+
+.error {
+  color: #b42318;
+  font-size: 0.76rem;
+  line-height: 1.5;
+}
